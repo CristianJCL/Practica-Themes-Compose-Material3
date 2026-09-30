@@ -1,0 +1,6 @@
+// Archivo de configuración raíz.
+// Define las versiones de los plugins que utiliza el módulo Android.
+plugins {
+    id("com.android.application") version "9.4.0" apply false
+    id("org.jetbrains.kotlin.plugin.compose") version "2.3.10" apply false
+}

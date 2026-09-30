@@ -153,7 +153,7 @@ fun WoofTopAppBar(modifier: Modifier = Modifier) {
 /**
  * Avatar visual del perro.
  *
- * El vector se recorta con MaterialTheme.shapes.small, demostrando que
+ * El recurso gráfico se recorta con MaterialTheme.shapes.small, demostrando que
  * la forma definida en Shape.kt se aplica desde el tema.
  *
  * @param dogIcon identificador del recurso gráfico.

@@ -22,7 +22,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        // Permite utilizar VectorDrawable en las versiones compatibles.
+        // Permite utilizar VectorDrawable en versiones compatibles.
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -30,7 +30,7 @@ android {
 
     buildTypes {
         release {
-            // No se requiere reducción u ofuscación para esta práctica académica.
+            // La práctica no requiere ofuscación ni reducción de código.
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt")
@@ -38,7 +38,7 @@ android {
         }
     }
 
-    // Java 17 es la versión utilizada por el proyecto Android actual.
+    // Java 17 es la versión utilizada por la configuración actual del proyecto.
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -71,9 +71,6 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
-
-    // Permite utilizar las fuentes Abril Fatface y Montserrat desde Google Fonts.
-    implementation("androidx.compose.ui:ui-text-google-fonts:1.12.1")
 
     // Herramientas de vista previa y depuración de Compose.
     debugImplementation("androidx.compose.ui:ui-tooling")

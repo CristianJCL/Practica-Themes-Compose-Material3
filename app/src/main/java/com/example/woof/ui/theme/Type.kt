@@ -2,58 +2,57 @@ package com.example.woof.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.googlefonts.Font
-import androidx.compose.ui.text.googlefonts.GoogleFont
 import androidx.compose.ui.unit.sp
+import com.example.woof.R
 
 /**
- * Fuentes indicadas por la práctica.
+ * Familias tipográficas indicadas por la práctica.
  *
- * Compose 1.12 permite obtener Google Fonts mediante el proveedor
- * predeterminado de Google Play Services sin guardar archivos TTF
- * dentro del repositorio.
+ * Los archivos se guardan en res/font para que Woof conserve su identidad
+ * visual incluso cuando el dispositivo no tiene conexión a Internet.
  */
-private val abrilFatface = FontFamily(
-    Font(googleFont = GoogleFont("Abril Fatface"))
+private val AbrilFatface = FontFamily(
+    Font(R.font.abril_fatface_regular)
 )
 
-private val montserrat = FontFamily(
+private val Montserrat = FontFamily(
     Font(
-        googleFont = GoogleFont("Montserrat"),
+        resId = R.font.montserrat_regular,
         weight = FontWeight.Normal
     ),
     Font(
-        googleFont = GoogleFont("Montserrat"),
+        resId = R.font.montserrat_bold,
         weight = FontWeight.Bold
     )
 )
 
 /**
- * Escala tipográfica utilizada por la aplicación Woof.
+ * Escala tipográfica Material 3 utilizada en toda la aplicación.
  *
- * El título principal usa Abril Fatface y el contenido utiliza
- * Montserrat, tal como se propone en el codelab de Material 3.
+ * El encabezado emplea Abril Fatface y los datos de los perros utilizan
+ * Montserrat, de acuerdo con el resultado final del codelab.
  */
 val Typography = Typography(
     displayLarge = TextStyle(
-        fontFamily = abrilFatface,
+        fontFamily = AbrilFatface,
         fontWeight = FontWeight.Normal,
         fontSize = 36.sp
     ),
     displayMedium = TextStyle(
-        fontFamily = montserrat,
+        fontFamily = Montserrat,
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp
     ),
     labelSmall = TextStyle(
-        fontFamily = montserrat,
+        fontFamily = Montserrat,
         fontWeight = FontWeight.Bold,
         fontSize = 14.sp
     ),
     bodyLarge = TextStyle(
-        fontFamily = montserrat,
+        fontFamily = Montserrat,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp
     )

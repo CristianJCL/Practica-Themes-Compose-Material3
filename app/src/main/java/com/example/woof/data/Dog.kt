@@ -7,7 +7,7 @@ import com.example.woof.R
 /**
  * Modelo inmutable con la información necesaria para dibujar una tarjeta de perro.
  *
- * @property imageResourceId recurso vectorial que representa al perro.
+ * @property imageResourceId recurso gráfico que representa al perro.
  * @property name recurso de texto con el nombre del perro.
  * @property age edad del perro en años.
  */

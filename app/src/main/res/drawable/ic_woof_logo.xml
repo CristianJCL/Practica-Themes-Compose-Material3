@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Almohadilla central de la huella usada como logotipo de Woof. -->
+    <path
+        android:fillColor="#FF006C4C"
+        android:pathData="M13,31 C13,24 18,19 24,19 C30,19 35,24 35,31 C35,38 29,42 24,42 C19,42 13,38 13,31 Z" />
+
+    <!-- Dedos de la huella. -->
+    <path
+        android:fillColor="#FF006C4C"
+        android:pathData="M7,19 C7,14 10,11 14,11 C18,11 19,15 18,19 C17,23 14,25 11,24 C8,24 7,22 7,19 Z" />
+    <path
+        android:fillColor="#FF006C4C"
+        android:pathData="M17,11 C17,6 20,3 24,3 C28,3 30,7 29,11 C29,16 26,18 23,18 C19,17 17,15 17,11 Z" />
+    <path
+        android:fillColor="#FF006C4C"
+        android:pathData="M31,12 C32,7 35,5 39,6 C43,7 44,11 42,15 C41,19 38,21 35,20 C31,19 30,16 31,12 Z" />
+    <path
+        android:fillColor="#FF006C4C"
+        android:pathData="M37,22 C39,17 42,16 45,18 C48,20 48,24 46,27 C44,31 41,32 38,30 C35,28 35,25 37,22 Z" />
+</vector>
